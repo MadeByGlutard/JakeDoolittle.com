@@ -1,0 +1,102 @@
+/****************************************************************
+ * Global
+ ****************************************************************/
+html,
+body {
+    background-color: #111111;
+}
+
+.balance-text {
+    text-wrap: balanced;
+}
+
+
+
+
+/****************************************************************
+ * Sidebar
+ ****************************************************************/
+.sidebar {
+    padding: 30px;
+    color: #ffffff;
+}
+.sidebar h1 {
+    font-size: 24px;
+}
+.sidebar h2 {
+    font-size: 18px;
+}
+
+
+@media (min-width: 768px) {
+    .sidebar {
+        float: left;
+        width: 20%;
+    }
+}
+
+
+
+
+/****************************************************************
+ * Content
+ ****************************************************************/
+.content {
+    background-color: #f7f7f7;
+}
+
+.content .media {
+    position: relative;
+    margin-top: 0;
+}
+.content .media::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 18px;
+    width: 4px;
+    background-color: #eaeaea;
+}
+.content .media:first-child::before {
+    top: 30px;
+}
+
+.content .media-header {
+    padding: 20px;
+    padding-left: 40px;
+}
+.content .media-header::before {
+    content: '';
+    position: absolute;
+    top: 26px; left: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: #d35136;
+    border: 2px solid #f7f7f7;
+    border-radius: 50%;
+}
+.content .media-header .lead {
+    margin-bottom: 0;
+}
+
+.content .media-body {
+    position: relative;
+    padding: 20px;
+    background-color: #ffffff;
+    /*border-top: 1px solid #fafafa;*/
+}
+
+
+@media (min-width: 768px) {
+    .content {
+        float: left;
+        width: 80%;
+    }
+    .content .media-header {
+        float: left;
+        width: 30%;
+    }
+    .content .media-body {
+        min-height: 80px;
+        border-left: 1px solid #dedede;
+    }
+}

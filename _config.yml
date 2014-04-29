@@ -1,0 +1,17 @@
+# Configuration
+kramdown            :
+  input             : GFM
+
+permalink           : pretty
+relative_permalinks : false
+
+gems:
+  - jekyll-redirect-from
+
+# Metadata
+title               : Jake Doolittle
+description         : The portfolio of Jake Magnusson Doolittle.
+
+author              :
+  name              : MadeByGlutard
+  url               : http://madebyglutard.com

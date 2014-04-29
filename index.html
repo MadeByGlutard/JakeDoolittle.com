@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+{% for article in site.data.articles %}
+    <div class="media">
+        <div class="media-header">
+            <div class="lead">{{ article.date }}</div>
+            <div>{{ article.location }}</div>
+        </div>
+        <div class="media-body">
+            <h4 class="media-title">{{ article.title }}</h4>
+            {{ article.body | markdownify }}
+        </div>
+    </div>
+{% endfor %}
+
+<!--
+<div class="post clearfix">
+    <div class="meta">
+        Meta
+    </div>
+    <div class="body">
+        Body
+    </div>
+</div>
+
+<div class="post clearfix">
+    <div class="meta">
+        Meta
+    </div>
+    <div class="body">
+        Body
+    </div>
+</div>
+
+<div class="post clearfix">
+    <div class="meta">
+        Meta
+    </div>
+    <div class="body">
+        Body
+    </div>
+</div>
+
+<div class="post clearfix">
+    <div class="meta">
+        Meta
+    </div>
+    <div class="body">
+        Body
+    </div>
+</div>
+-->
