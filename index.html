@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for article in site.data.articles %}
+{% for article in site.data.articles reversed %}
     <div class="media">
         <div class="media-header">
             <div class="lead">{{ article.date }}</div>
