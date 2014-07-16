@@ -1,5 +1,9 @@
-# OS X
+# Development
 .DS_Store
+.brackets.json
 
-# Jekyll
+# Project
 _site
+vendor
+.sass-cache
+Gemfile.lock
