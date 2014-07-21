@@ -1,17 +1,38 @@
 # Configuration
-kramdown            :
-  input             : GFM
+kramdown:
+  input: GFM
 
-permalink           : pretty
-relative_permalinks : false
+permalink: pretty
+relative_permalinks: false
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
+
+sass:
+  style: :compressed
+  sass_dir: _assets/css
+
+exclude:
+  - vendor
+  - Gemfile
+  - Rakefile
+  - Gemfile.lock
+
 
 # Metadata
-title               : Jake Doolittle
-description         : The portfolio of Jake Magnusson Doolittle.
+url: http://jakedoolittle.com
+baseurl:
 
-author              :
-  name              : MadeByGlutard
-  url               : http://madebyglutard.com
+title: Jake Doolittle
+tagline:
+description: The portfolio of Jake Magnusson Doolittle.
+
+
+# Plugins
+compress_html:
+  endings: [html,head,body, li,dt,dd, thead,tbody,tfoot,caption,tr,th,td, optgroup,option]
+  clippings: [html,head,body,meta,title,link,script, h1,h2,h3,h4,h5,div,p,hr,ol,ul,li,dl,dt,dd, table,thead,tbody,tfoot,caption,colgroup,col,tr,th,td, optgroup,option]
+
+remote_data:
+  github_owner:   https://api.github.com/orgs/absolute413
