@@ -36,7 +36,7 @@ tagline:
 description: The portfolio of Jake Magnusson Doolittle.
 
 # Plugins
-repository: absolute413/JakeDoolittle.com # Populate site.github locally
+repository: MadeByGlutard/JakeDoolittle.com # Populate site.github locally
 
 compress_html:
   clippings: all
