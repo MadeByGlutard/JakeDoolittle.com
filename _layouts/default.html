@@ -5,27 +5,21 @@ layout: compress
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="{{ site.description }}">
-    <title>
-        {% if page.title %}
-            {{ page.title }} &middot;
-        {% endif %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {% seo %}
 
-        {{ site.title }}
-    </title>
-
-    <link rel="stylesheet" href="//cdn.madebyglutard.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdn.madebyglutard.com/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/public/css/styles.css">
+  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ "/assets/css/default.css" | prepend: site.baseurl }}">
 </head>
 <body class="clearfix">
-    {% include sidebar.html %}
-
-    <div class="content">
-        {{ content }}
-    </div>
+  {% include sidebar.html %}
+  <div class="content">
+    {{ content }}
+  </div>
 </body>
 </html>
